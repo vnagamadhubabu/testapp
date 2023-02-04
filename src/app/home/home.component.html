@@ -1,0 +1,47 @@
+<p>home works!</p>
+Today Date : {{todaydate}}
+<h1>Home Component Loaded</h1>
+{{nam}}<br><br>
+Id : <input type="text" [(ngModel)]="user.id"><br>
+Name : <input type="text" [(ngModel)]="user.name"><br>
+Age : <input type="text" [(ngModel)]="user.age"br>
+<input type="button" value="click here!" (click)="printUser()"><br><br>
+<div *ngIf="visibility">
+Name : <input type="text" id="txt1"><br>
+<input type="button" value="click here!" (click)="printdata()"><br><br>
+<input type="button" value="click here!" (dblclick)="printd()"><br><br>
+<input type="button" value="click here!" (mouseenter)="printda()">
+</div><br><br>
+{{mobiles}}<br><br>
+{{mobiles[0]}}<br><br>
+{{mobiles[1]}}<br><br>
+<h2>Mobiles Avaliable</h2>
+<ul>
+  <li *ngFor="let mobile of mobiles">
+    {{mobile}}
+  </li>
+</ul>
+<br><br>
+<h4>Lower to Upper Case</h4><br><br>
+{{capletter | lowercase}}
+<br><br>
+<h4>Lower to Upper Case</h4><br><br>
+{{loletter | uppercase}}
+<br><br>
+<h4>Date fulldate</h4>
+{{date}}
+<br><br>
+<h4>Date formate d/m/y</h4>
+{{date | date : 'd/m/y'}}
+<br><br>
+<h4>Date in shorttime</h4>
+{{date | date : 'shortTime'}}
+<br><br>
+<h4>currency in Euro's</h4>
+{{amount | currency : 'EUR'}}
+<br><br>
+<h4>currency in INR's</h4>
+{{amount | currency : 'INR'}}
+<br><br>
+<h4>currency in USD's</h4>
+{{amount | currency : 'USD'}}

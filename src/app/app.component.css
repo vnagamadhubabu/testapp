@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+  color: red;
+}
+h2 {
+  color: darkcyan;
+}
+a:link,a:visited {
+  background-color: orangered;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 100px;
+  text-decoration: none;
+
+}
+a:hover,a:active{
+  color: black;
+  background-color: cadetblue;
+}

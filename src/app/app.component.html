@@ -1,0 +1,18 @@
+<h1>Welcome {{title}}</h1>
+<h1>{{name}}</h1>
+<h1>{{value}}</h1>
+<h1>{{databindtwoway}}</h1>
+
+<h2>App Component</h2>
+
+
+<br>
+
+<input type="text" [(ngModel)]="databindtwoway">
+<input type="button" value="click here" (click)="printdata()">
+
+<br><br>
+<a routerLink="/home">Home</a>
+<a routerLink="/detail">Detail</a>
+<a routerLink="/login">Login</a>
+<router-outlet></router-outlet>
